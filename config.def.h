@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* interval between updates (in ms) */
-const unsigned int interval = 0500;
+const unsigned int interval = 0050;
 
 /* text to show if no value can be retrieved */
 static const char unknown_str[] = "n/a";
@@ -68,6 +68,6 @@ static const struct arg args[] = {
     { keyboard_indicators, " %s ", "%c"},
     { keymap, "%s |",          NULL },
     { ram_perc, " %s%% |",        NULL },
-    { cpu_perc,  " %s%% |",        NULL},      
+    { cpu_freq,  " %s |",        NULL},      
     { datetime, " %s ",        "%F %T" },
 };
