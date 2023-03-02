@@ -7,7 +7,7 @@ const unsigned int interval = 1000;
 static const char unknown_str[] = "n/a";
 
 /* maximum output string length */
-#define MAXLEN 2048
+#define MAXLEN 3048
 
 /*
  * function            description                     argument (example)
@@ -65,9 +65,9 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-    { keymap, " %s",          NULL },
-    { datetime, " %s",        "%F %T" },
-    { ram_used, " %s/",        NULL },
-    { cpu_perc,  "%s",        NULL},      
+    { keymap, " %s |",          NULL },
+    { datetime, " %s |",        "%F %T" },
+    { ram_used, " %s |",        NULL },
+    { cpu_perc,  " %s% ",        NULL},      
     
 };
