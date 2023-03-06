@@ -67,6 +67,7 @@ static const struct arg args[] = {
 	/* function format          argument */
     { keyboard_indicators, " %s ", "%c"},
     { keymap, "%s |",          NULL },
+    { run_command,  " %s | ", "~/slstatus/volume.sh" },
     { ram_perc, " %s%% |",        NULL },
     { cpu_perc,  " %s%% ",        NULL},  
     { cpu_freq,  "%s |",		    NULL}, 	
