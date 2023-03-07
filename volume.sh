@@ -1,12 +1,6 @@
 #!/bin/sh
 
 vol=$(pamixer --get-volume)
-volStatus=$(pamixer --get-volume-human) 
-
-if [ "$volStatus" = "muted" ]; then
-	icon="🔇"
-else
-	icon="🔉"
-fi
+volStatus=$(pamixer --get-volume-human)
 
 printf "%s %s%%" "$icon" "$vol"
