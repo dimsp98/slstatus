@@ -72,7 +72,7 @@ static const struct arg args[] = {
     {temp, "^c#89dceb^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%s°C ^d^",
      "/sys/class/thermal/thermal_zone0/temp"},
     {cpu_perc, "^c#a6e3a1^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%s%%  ^d^", NULL},
-    {ram_perc, "^c#fab387^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%s%%  ^d^", NULL},
+    {ram_perc, "^c#f9e2af^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%s%%  ^d^", NULL},
     {datetime, "^c#f38ba8^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%s  ^d^",
      "%a %d %B ^c#f38ba8^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%H:%M  "},
 };
