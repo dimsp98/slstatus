@@ -65,7 +65,7 @@ static const char unknown_str[] = "f";
  */
 static const struct arg args[] = {
     /* function format          argument */
-    {keyboard_indicators, " %s ", "%c"},
+    {keyboard_indicators, " %s", "%c"},
     {keymap, " %s|", NULL},
     {temp, "  %s|", "/sys/class/thermal/thermal_zone0/temp"},
     {cpu_perc, " 󰺹 %s|", NULL},
