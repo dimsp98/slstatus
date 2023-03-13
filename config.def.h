@@ -7,7 +7,7 @@ const unsigned int interval = 1000;
 static const char unknown_str[] = "f";
 
 /* maximum output string length */
-#define MAXLEN 2048
+#define MAXLEN 4096
 
 /*
  * function            description                     argument (example)
@@ -65,13 +65,15 @@ static const char unknown_str[] = "f";
  */
 static const struct arg args[] = {
     /* function format          argument */
-    {keyboard_indicators, " %s", "%c"},
-    {keymap, " %s|", NULL},
-    {temp, "  %s|", "/sys/class/thermal/thermal_zone0/temp"},
-    {cpu_perc, " 󰺹 %s|", NULL},
-    {ram_perc, " 󰒋 %s|", NULL},
-    {run_command, " %s|", "~/slstatus/volume.sh"},
-    {disk_perc, " 󱩵 %s|", "/"},
-    {datetime, "  %s", "%a %d %B  %I:%M %p|"},
-    {kernel_release, "  %s", NULL},
+    {keyboard_indicators, "^c#cba6f7^^b#1e1e2e^ %s^d^", "%c"},
+    {keymap, "^c#cdd6f4^^b#1e1e2e^ %s  ^d^", NULL},
+    {temp, "^c#89dceb^^b#1e1e2e^ %s  ^d^",
+     "/sys/class/thermal/thermal_zone0/temp"},
+    {cpu_perc, "^c#a6e3a1^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%s%%  ^d^", NULL},
+    {ram_perc, "^c#fab387^^b#1e1e2e^󰒋 ^c#cdd6f4^^b#1e1e2e^%s  ^d^", NULL},
+    {run_command, "^c#74c7ec^^b#1e1e2e^^c#cdd6f4^^b#1e1e2e^%s  ^d^",
+     "~/slstatus/volume.sh"},
+    {disk_perc, "^c#f9e2af^^b#1e1e2e^󱩵 ^c#cdd6f4^^b#1e1e2e^%s%%  ^d^", "/"},
+    {datetime, "^c#f38ba8^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%s  ^d^",
+     "%a %d %B ^c#f38ba8^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%I:%M %p  "},
 };
