@@ -1,13 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 
 /* interval between updates (in ms) */
-const unsigned int interval = 1000;
+const unsigned int interval = 800;
 
 /* text to show if no value can be retrieved */
 static const char unknown_str[] = "f";
 
 /* maximum output string length */
-#define MAXLEN 4096
+#define MAXLEN 3072
 
 /*
  * function            description                     argument (example)
