@@ -1,13 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 
 /* interval between updates (in ms) */
-const unsigned int interval = 0500;
+const unsigned int interval = 1000;
 
 /* text to show if no value can be retrieved */
-static const char unknown_str[] = "n/a";
+static const char unknown_str[] = "f";
 
 /* maximum output string length */
-#define MAXLEN 3048
+#define MAXLEN 2048
 
 /*
  * function            description                     argument (example)
@@ -66,10 +66,12 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
     /* function format          argument */
     {keyboard_indicators, " %s ", "%c"},
-    {keymap, "%s |", NULL},
-    {run_command, "%s | ", "~/slstatus/volume.sh"},
-    {ram_perc, " %s%% |", NULL},
-    {cpu_perc, " %s%% ", NULL},
-    {cpu_freq, "%s |", NULL},
-    {datetime, " %s ", "%F %T"},
+    {keymap, " %s|", NULL},
+    {temp, "  %s|", "/sys/class/thermal/thermal_zone0/temp"},
+    {cpu_perc, " 󰺹 %s|", NULL},
+    {ram_perc, " 󰒋 %s|", NULL},
+    {run_command, " %s|", "~/slstatus/volume.sh"},
+    {disk_perc, " 󱩵 %s|", "/"},
+    {datetime, "  %s", "%a %d %B  %I:%M %p|"},
+    {kernel_release, "  %s", NULL},
 };
