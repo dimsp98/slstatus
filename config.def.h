@@ -75,6 +75,6 @@ static const struct arg args[] = {
     {ram_perc, "^c#f9e2af^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%s%%  ^d^", NULL},
     {datetime, "^c#f38ba8^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%s ^d^",
      "%a %d %B  ^c#f38ba8^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%H:%M "},
-    {kernel_release, "^c#fab387^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%s   ^d^",
+    {kernel_release, "^c#fab387^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%s    ^d^",
      NULL},
 };
