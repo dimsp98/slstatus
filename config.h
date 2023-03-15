@@ -1,13 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 
 /* interval between updates (in ms) */
-const unsigned int interval = 700;
+const unsigned int interval = 800;
 
 /* text to show if no value can be retrieved */
 static const char unknown_str[] = "f";
 
 /* maximum output string length */
-#define MAXLEN 6144
+#define MAXLEN 2048
 
 /*
  * function            description                     argument (example)
@@ -65,8 +65,8 @@ static const char unknown_str[] = "f";
  */
 static const struct arg args[] = {
     /* function format          argument */
-    {keyboard_indicators, "^c#cba6f7^^b#1e1e2e^ %s^d^", "%c"},
-    {keymap, "^c#cdd6f4^^b#1e1e2e^ %s  ^d^", NULL},
+    {keyboard_indicators, " ^c#cba6f7^^b#1e1e2e^ %s^d^", "%c"},
+    {keymap, " %s ", NULL},
     {netspeed_tx, "^c#89b4fa^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%s ^d^",
      "enp3s0"},
     {run_command, "^c#74c7ec^^b#1e1e2e^^c#cdd6f4^^b#1e1e2e^%s  ^d^",
