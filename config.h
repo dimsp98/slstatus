@@ -67,8 +67,8 @@ static const struct arg args[] = {
     /* function format          argument */
     {keyboard_indicators, " ^c#cba6f7^^b#1e1e2e^ %s^d^", "%c"},
     {keymap, " %s ", NULL},
-    {netspeed_tx, "^c#89b4fa^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%sB/s ^d^",
-     "enp3s0"},
+    /*   {netspeed_tx, "^c#89b4fa^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%sB/s ^d^",
+       "enp3s0"}, */
     {run_command, "^c#74c7ec^^b#1e1e2e^^c#cdd6f4^^b#1e1e2e^%s ^d^",
      "~/slstatus/volume.sh"},
     {ram_perc, "^c#f9e2af^^b#1e1e2e^ ^c#cdd6f4^^b#1e1e2e^%s%% ^d^", NULL},
